@@ -24,14 +24,14 @@ body {
    display: flex;
    min-height: 62vh;
    justify-content: center;
-   margin: 4% 5% 0 22%;  
+   margin: 4% 5% 0 22%;
    width: 60%;
    cursor: pointer;
    animation: margin-top 1s ease-in-out;
    /* box-shadow:0px 10px 10px 10px rgba(158, 163, 159, 0.47); */
    border: 2px solid #660b5e;
    /* opacity: .9; */
-  
+
 }
 
 @keyframes margin-top {
@@ -40,7 +40,7 @@ body {
    }
 
    to {
-     margin-top: 4%;
+      margin-top: 4%;
    }
 }
 
@@ -58,9 +58,9 @@ img {
 
 h1 {
    margin: 50px 0 0 0;
-    /* color:#660b5e; */
-    /* color: rgb(152, 158, 163); */
-    color: #660b5e;
+   /* color:#660b5e; */
+   /* color: rgb(152, 158, 163); */
+   color: #660b5e;
 }
 
 .abt {
@@ -77,10 +77,13 @@ p {
 
 /* CARDS */
 
-.CARD-1{
+.CARD-1 {
    display: flex;
-
+   flex-direction: row;
+   flex-flow: wrap;
+   justify-content: space-around;
 }
+
 .description img {
    height: 260px;
    width: 317px;
@@ -88,18 +91,21 @@ p {
    padding-top: 0%;
    margin-left: -20px;
 }
-.description{
+
+.description {
    background-color: rgba(195, 197, 195, 0.767);
    height: 320px;
    width: 320px;
    margin: 4% 0 0.8% 6%;
    /* border-radius: 15%; */
 }
-.description p{
+
+.description p {
    text-align: center;
    color: darkmagenta;
    font-weight: 600;
 }
+
 .description2 img {
    height: 260px;
    width: 317px;
@@ -107,18 +113,21 @@ p {
    padding-top: 0%;
    margin-left: -20px;
 }
-.description2{
+
+.description2 {
    background-color: rgba(195, 197, 195, 0.767);
    height: 320px;
    width: 320px;
    margin: 4% 0 0.8% 9%;
    /* border-radius: 15%; */
 }
-.description2 p{
+
+.description2 p {
    text-align: center;
    color: darkmagenta;
    font-weight: 600;
 }
+
 .description3 img {
    height: 260px;
    width: 317px;
@@ -126,26 +135,28 @@ p {
    padding-top: 0%;
    margin-left: -20px;
 }
-.description3{
+
+.description3 {
    background-color: rgba(195, 197, 195, 0.767);
    height: 320px;
    width: 320px;
    margin: 4% 0 0.8% 12%;
    /* border-radius: 15%; */
 }
-.description3 p{
+
+.description3 p {
    text-align: center;
    color: darkmagenta;
    font-weight: 600;
 }
 
-.interests p{
+.interests p {
    color: #d6bdee;
    padding: 0;
    margin: 0;
 }
 
-.interests{
+.interests {
    /* background-color: #d6bdee; */
    color: #d6bdee;
    text-align: center;
@@ -159,4 +170,54 @@ p {
    outline: none;
    font-size: large;
    border-bottom: 2px solid #660b5e;
+}
+
+@media screen and (min-width: 280px)  and (max-width: 780px)  {
+   .container {
+      /* margin: 4% 2% 0 2%;   */
+      /* margin-left: 50%; */
+      width: 100%;
+      height: 25%;
+      /* word-wrap: break-word; */
+   }
+   .CARD-1{
+      display: flex;
+      flex-direction: column;
+      flex-flow: wrap;
+   }
+
+   p {
+      font-size: 20px;
+   }
+
+   /* img {
+      height: 4%;
+      width: 40px;
+   } */
+
+   .logo img {
+      height: 100px;
+      width: 100px;
+      margin: 2% 5% 2% 5%;
+   }
+
+   .description {
+      /* margin: 4% 0 0.8% 6%; */
+      flex-direction: column;
+   }
+
+   .abt {
+      margin-left: 30px;
+   }
+
+   .description2 {
+      margin-top: 7%;
+      flex-direction: column;
+   }
+
+   .description3 {
+      /* margin-top: 5%; */
+      flex-direction: column;
+   }
+
 }
