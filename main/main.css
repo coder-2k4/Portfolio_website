@@ -1,63 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans&family=Quicksand&family=Saira&display=swap');
 
- * {
-    font-family: 'Mooli', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Saira', sans-serif;
-    margin: 0;
-    padding: 0;
- }
+* {
+   font-family: 'Mooli', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   font-family: 'Saira', sans-serif;
+   margin: 0;
+   padding: 0;
+}
 
- body {
-    background-color: #cdb2e9;
-    overflow-x: hidden;
-    overflow-y:auto ;
- }
+body {
+   background-color: #cdb2e9;
+   overflow-x: hidden;
+   overflow-y: auto;
+}
 
 
- /* NAVBAR */
+/* NAVBAR */
 
- .container {
-    background-color: #d6bdee;
-    width: 100%;
- }
+.container {
+   background-color: #d6bdee;
+   width: 100%;
+}
 
- .navbar {
-    display: flex;
-    min-height: 80px;
-    justify-content: center;
-    margin-left: 300px;
-    width: 100%;
- }
+.navbar {
+   display: flex;
+   min-height: 80px;
+   justify-content: center;
+   margin-left: 100px;
+   width: 100%;
+}
 
- .nav-items ul {
-    display: flex;
-    margin-right: -200px;
-    color: rgba(87, 0, 102, 1);
-    font-weight: bold;
+.nav-items ul {
+   display: flex;
+   margin-right: -200px;
+   color: rgba(87, 0, 102, 1);
+   font-weight: bold;
 
- }
+}
 
- .nav-items li {
-    margin: 10px 5px 5px 3px;
-    list-style: none;
-    padding: 10px;
- }
+.nav-items li {
+   margin: 10px 5px 5px 3px;
+   list-style: none;
+   padding: 10px;
+}
 
- li.list a {
-    color: rgba(87, 0, 102, 1);
-    font-weight: bold;
-    font-size: 1.2rem;
- }
+li.list a {
+   color: rgba(87, 0, 102, 1);
+   font-weight: bold;
+   font-size: 1.2rem;
+}
 
- .nav-items li.title {
-    margin-left: 8px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    font-size: 1.2rem;
- }
+.nav-items li.title {
+   margin-left: 8px;
+   letter-spacing: 2px;
+   cursor: pointer;
+   font-size: 1.2rem;
+}
 
- .nav-items ul li a {
-    text-decoration: none;
- }
+.nav-items ul li a {
+   text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:680px) {
+   .container {
+      width: 100%;
+   }
+
+   .rightSection img {
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-top: 20%;
+      padding: 0;
+   }
+
+  
+  
+}

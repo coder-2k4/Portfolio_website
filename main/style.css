@@ -183,5 +183,27 @@
      width: 30px;
    }
  }
+@media screen and(max-width:680px) {
+   .nav-items li.title {
+      margin-left: 2px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-size: .5rem;
+   }
 
+   .nav-items li {
+      margin: 10px 5px 5px 3px;
+   }
+
+   .navbar {
+      margin-left: 0;
+   }
+   footer{
+     margin: 0;
+         padding: 0;
+         height: 30px;
+         /* width: 100%; */
+   }
+  
+}
  
